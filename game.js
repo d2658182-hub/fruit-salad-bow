@@ -346,10 +346,10 @@ var _SETTINGS = {
     },
     'Branding': {
         'Splash': {
-            'Enabled': !0x1
+            'Enabled': !0x0
         },
         'Logo': {
-            'Enabled': !0x1,
+            'Enabled': !0x0,
             'Link': 'http://google.com',
             'LinkEnabled': !0x1,
             'NewWindow': !0x0,
@@ -357,6 +357,11 @@ var _SETTINGS = {
             'Height': 0x3d
         }
     },
+    'MoreGames': {
+        'Enabled': !0x0,
+        'Link': '',
+        'NewWindow': !0x0
+    }
 };
 var MobileAdInGamePreroll = {
     'ad_duration': _SETTINGS['Ad']['Mobile']['Preroll']['Duration'],
@@ -9796,7 +9801,7 @@ ig['module']('plugins.branding.splash')['requires']('impact.impact', 'impact.ent
             'x': 0x20,
             'y': 0x20
         },
-        'splash': new ig['Image']('branding/splash1.png'),
+
         'init': function(_0x10c5c8, _0x2f43e9, _0x4f57ba) {
             this['parent'](_0x10c5c8, _0x2f43e9, _0x4f57ba);
             0x140 >= ig['system']['width'] ? (this['size']['x'] = 0x140, this['size']['y'] = 0xc8) : (this['size']['x'] = 0x1e0, this['size']['y'] = 0xf0);
@@ -9925,7 +9930,7 @@ ig['module']('game.entities.buttons.button-branding-logo')['requires']('game.ent
     EntityButtonBrandingLogo = EntityButton['extend']({
         'type': ig['Entity']['TYPE']['A'],
         'gravityFactor': 0x0,
-        'logo': new ig['AnimationSheet']('branding/logo.png', _SETTINGS['Branding']['Logo']['Width'], _SETTINGS['Branding']['Logo']['Height']),
+        'logo': new ig['AnimationSheet']('media/graphics/misc/invisible.png', 0x1, 0x1),
         'zIndex': 0x2711,
         'size': {
             'x': 0x40,
@@ -12484,7 +12489,7 @@ ig['module']('game.entities.buttons.button-sound')['requires']('game.entities.bu
     EntityButtonSound = EntityButton['extend']({
         'type': ig['Entity']['TYPE']['A'],
         'gravityFactor': 0x0,
-        'logo': new ig['AnimationSheet']('branding/logo.png', _SETTINGS['Branding']['Logo']['Width'], _SETTINGS['Branding']['Logo']['Height']),
+        'logo': new ig['AnimationSheet']('media/graphics/misc/invisible.png', 0x1, 0x1),
         'zIndex': 0x2711,
         'size': {
             'x': 0x32,
