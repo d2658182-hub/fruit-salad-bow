@@ -358,7 +358,7 @@ var _SETTINGS = {
         }
     },
     'MoreGames': {
-        'Enabled': !0x1,
+        'Enabled': !0x0,
         'Link': 'http://www.marketjs.com/game/links/mobile',
         'NewWindow': !0x0
     }
@@ -9863,8 +9863,7 @@ ig['module']('plugins.branding.splash')['requires']('impact.impact', 'impact.ent
             ig['system']['context']['fillRect'](0x0, 0x0, ig['system']['width'], ig['system']['height']);
             ig['system']['context']['fillStyle'] = '#000';
             ig['system']['context']['font'] = '12px\x20Arial';
-            ig['system']['context']['textAlign'] = 'left';
-            0x140 >= ig['system']['width'] ? ig['system']['context']['fillText']('powered\x20by\x20MarketJS.com', ig['system']['width'] - 0x96, ig['system']['height'] - 0xf) : ig['system']['context']['fillText']('powered\x20by\x20MarketJS.com', ig['system']['width'] - 0xa0, ig['system']['height'] - 0xf);
+            ig['system']['context']['textAlign'] = 'left'; 
             this['parent']();
             this['splash'] && ig['system']['context']['drawImage'](this['splash']['data'], 0x0, 0x0, this['splash']['data']['width'], this['splash']['data']['height'], this['pos']['x'], this['pos']['y'], this['size']['x'], this['size']['y']);
         }
