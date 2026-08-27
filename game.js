@@ -10119,23 +10119,18 @@ ig['module']('game.entities.opening-kitty')['requires']('impact.entity')['define
             this['parent'](_0x3fc9a8, _0x3a67d6, _0x2f91ba);
         },
         'ready': function() {
-            if (!ig['wm'])
-                if (_SETTINGS['DeveloperBranding']['Splash']['Enabled']) {
-                    this['initTimer'] = new ig['Timer'](0.1);
-                    try {
-                        ig['soundHandler']['sfxPlayer']['play'](this['soundKey']);
-                    } catch (_0x4058d6) {
-                        console['log'](_0x4058d6);
-                    }
-                } else ig['game']['director']['nextLevel'](), ig['system']['context']['globalAlpha'] = 0x1, this['kill']();
+            if (!ig['wm']) {
+                // Skip the MarketJS "Designed by MarketJS" opening screen entirely.
+                ig['game']['director']['nextLevel']();
+                ig['system']['context']['globalAlpha'] = 0x1;
+                this['kill']();
+            }
         },
         'update': function() {
             this['parent']();
-            this['updateKittyOpening']();
         },
         'draw': function() {
             this['parent']();
-            ig['global']['wm'] || (this['nextLevelTimer'] && 0x0 > this['nextLevelTimer']['delta']() && (ig['system']['context']['globalAlpha'] = -this['nextLevelTimer']['delta']()), this['drawKittyOpening']());
         },
         'updateKittyOpening': function() {
             this['initTimer'] && 0x0 < this['initTimer']['delta']() && (this['initTimer'] = null, this['kittyTimer'] = new ig['Timer'](0.15));
