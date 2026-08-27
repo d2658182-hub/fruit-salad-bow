@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Salad Bow</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style>html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:100%;}</style>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script>
+        // Stubs for the external SWAGAPI/AG branding & session API removed during cleanup.
+        // game.js calls SWAGAPI.showBrandingAnimation('ajaxbar').then(...) once at init.
+        var _noop_promise = function () { return { then: function (cb) { if (typeof cb === 'function') cb(); return { bind: function () {} }; } }; };
+        window.SWAGAPI = {
+            showBrandingAnimation: function () { return _noop_promise(); }
+        };
+        // AG is the SWAGAPI session object used for start/end game, scores, dialogs.
+        window.AG = {
+            startSession: function () { return _noop_promise(); },
+            startGame: function () { return _noop_promise(); },
+            endGame: function () { return _noop_promise(); },
+            postScore: function () { return _noop_promise(); },
+            showDialog: function () { return _noop_promise(); }
+        };
+        window.addEventListener('keydown', function (e) {
+            if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1 && e.target == document.body) { e.preventDefault(); }
+        }, false);
+    </script>
+    <script type="text/javascript" src="game.js"></script>
+</head>
+<body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
+    <div id="ajaxbar">
+        <div id="game"><canvas id="canvas"></canvas></div>
+        <div id="orientate"><img src="media/graphics/orientate/landscape.jpg" /></div>
+        <div id="play" class="play" onclick=""><img src="media/graphics/splash/mobile/cover-start.jpg" /></div>
+    </div>
+</body>
+</html>
