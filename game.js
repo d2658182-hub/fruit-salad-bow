@@ -21,7 +21,7 @@ var _STRINGS = {
         'Splash': {
             'Loading': 'Loading...',
             'LogoLine1': 'Some\x20text\x20here',
-            'LogoLine2': 'powered\x20by\x20MarketJS',
+            'LogoLine2': 'none',
             'LogoLine3': 'none',
             'TapToStart': 'TAP\x20TO\x20START'
         },
@@ -357,11 +357,6 @@ var _SETTINGS = {
             'Height': 0x3d
         }
     },
-    'MoreGames': {
-        'Enabled': !0x0,
-        'Link': 'http://www.marketjs.com/game/links/mobile',
-        'NewWindow': !0x0
-    }
 };
 var MobileAdInGamePreroll = {
     'ad_duration': _SETTINGS['Ad']['Mobile']['Preroll']['Duration'],
@@ -12557,7 +12552,6 @@ ig['module']('game.main')['requires']('impact.game', 'game.entities.ag-logo', 'p
         'tweens': null,
         'init': function() {
             this['tweens'] = new ig['TweensHandler']();
-            this['setupMarketJsGameCenter']();
             this['io'] = new IoManager();
             this['setupUrlParams'] = new ig['UrlParameters']();
             this['removeLoadingWheel']();
@@ -12572,19 +12566,7 @@ ig['module']('game.main')['requires']('impact.game', 'game.entities.ag-logo', 'p
                 'score': 0x0
             };
         },
-        'setupMarketJsGameCenter': function() {
-            if (_SETTINGS)
-                if (_SETTINGS['MarketJSGameCenter']) {
-                    var _0x4f37e6 = ig['domHandler']['getElementByClass']('gamecenter-activator');
-                    _SETTINGS['MarketJSGameCenter']['Activator']['Enabled'] && _SETTINGS['MarketJSGameCenter']['Activator']['Position'] && (console['log']('MarketJSGameCenter\x20activator\x20settings\x20present\x20....'), ig['domHandler']['css'](_0x4f37e6, {
-                        'position': 'absolute',
-                        'left': _SETTINGS['MarketJSGameCenter']['Activator']['Position']['Left'],
-                        'top': _SETTINGS['MarketJSGameCenter']['Activator']['Position']['Top'],
-                        'z-index': 0x3
-                    }));
-                    ig['domHandler']['show'](_0x4f37e6);
-                } else console['log']('MarketJSGameCenter\x20settings\x20not\x20defined\x20in\x20game\x20settings');
-        },
+
         'finalize': function() {
             var _0x3885d2 = ig['domHandler']['getElementById']('#play');
             ig['domHandler']['attr'](_0x3885d2, 'onclick', 'ig.soundHandler.sfxPlayer.play(\x22staticSound\x22);ig.game.splashClick();');
