@@ -333,7 +333,7 @@ var _SETTINGS = {
     },
     'DeveloperBranding': {
         'Splash': {
-            'Enabled': !0x1
+            'Enabled': !0x0
         },
         'Logo': {
             'Enabled': !0x1,
