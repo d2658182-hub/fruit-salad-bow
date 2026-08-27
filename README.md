@@ -1,8 +1,8 @@
-# Fruit Salad Bow
+# Fruit Strike
 
-Step into the juiciest archery challenge on the web! **Fruit Salad Bow** turns every shot into a burst of color and flavor. Vibrant fruits soar through a sun-kissed orchard, and only your steady aim can slice them cleanly in mid-air. It's fresh, fizzy and insanely satisfying — the satisfying *thwack* of a perfect hit, the splash of juice, the combo that keeps climbing. Easy to pick up, deliciously hard to master, this is the feel-good bow game you'll come back to for just one more round… and then ten more.
+Step into the juiciest archery challenge on the web! **Fruit Strike** turns every shot into a burst of color and flavor. Vibrant fruits soar through a sun-kissed orchard, and only your steady aim can slice them cleanly in mid-air. It's fresh, fizzy and insanely satisfying — the satisfying *thwack* of a perfect hit, the splash of juice, the combo that keeps climbing. Easy to pick up, deliciously hard to master, this is the feel-good bow game you'll come back to for just one more round… and then ten more.
 
-Chase high scores, unlock the rhythm of perfect shots and show off reflexes that feel like magic. Bright, cheerful and bursting with charm, Fruit Salad Bow is a pure summer hit for anyone who loves quick, skillful fun.
+Chase high scores, unlock the rhythm of perfect shots and show off reflexes that feel like magic. Bright, cheerful and bursting with charm, Fruit Strike is a pure summer hit for anyone who loves quick, skillful fun.
 
 ## Controls
 

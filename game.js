@@ -346,10 +346,10 @@ var _SETTINGS = {
     },
     'Branding': {
         'Splash': {
-            'Enabled': !0x0
+            'Enabled': !0x1
         },
         'Logo': {
-            'Enabled': !0x0,
+            'Enabled': !0x1,
             'Link': 'http://google.com',
             'LinkEnabled': !0x1,
             'NewWindow': !0x0,
